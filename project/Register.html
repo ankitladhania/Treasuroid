@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<div id="main">
+<script>
+$(document).ready(function() {
+ $('#signup').validate({
+   
+   rules: {
+	   name:{
+		   required:true,
+		   rangelength:[10]
+	   },
+     password: {
+        required: true,
+        rangelength:[8,16]
+     },
+     confirm_password: {equalTo:'#password'},
+     spam: "required"
+   }, //end rules
+   messages: {
+	   name:{
+		   reguired:'please type a username',
+		   rangelength:'username must be a mobile number.'
+	   },
+      password: {
+        required: 'Please type a password',
+        rangelength: 'Password must be between 8 and 16 characters long.'
+      },
+      confirm_password: {
+        equalTo: 'The two passwords do not match.'
+      }
+   },
+   errorPlacement: function(error, element) { 
+       if ( element.is(":radio") || element.is(":checkbox")) {
+          error.appendTo( element.parent()); 
+        } else {
+          error.insertAfter(element);
+        } 
+    } 
+
+  }); // end validate 
+}); // end ready
+</script>
+
+<div id="content" class="clearfix">
+<div class="reglog">
+<div id="reg">Register</div>
+<div id="log"><a href="login.html">Login</a></div>
+</div>
+
+
+                       <form action="process.html" method="post" name="signup" id="signup">
+					
+								<div>
+									<label for="name">Username*:</label>
+									<input type="text" id="name">
+								</div>
+                                <div id="text">
+                                *Username should be the mobile number of android enabled phone.
+                                </div>
+			<div>
+				<label for="password" class="label">Password :</label>
+				<input name="password" type="password" id="password">
+			</div>
+			<div>
+				<label for="confirm_password" class="label">Confirm Password :</label>
+				<input name="confirm_password" type="password" id="confirm_password">
+			</div>
+            
+                                <div>
+                              
+									<label for="mobile2">Mobile 2 :</label>
+									<input type="text" id="mobile2" width="100px">
+                               
+								</div>
+                                <div>
+									<label for="mobile3">Mobile 3 :</label>
+									<input type="text" id="mobile3">
+								</div>
+                                <div>
+									<label for="mobile4">Mobile 4 :</label>
+									<input type="text" id="mobile4">
+								</div>
+                                <div>
+									<label for="name">College :</label>
+									<input type="text" id="college">
+								</div>
+                                <div>
+							    <input type="submit" value="Submit" id="submit">
+                                </div>
+						</form>
+
+</div>
+ </div>
+</body>
+</html>

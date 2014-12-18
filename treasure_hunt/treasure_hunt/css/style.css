@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+#main{
+	height:auto;
+	margin:0px auto;
+}
+#content{
+	width:500px;
+	height:auto;
+	margin:0px auto;
+	background: #ef0700; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #ef0700 0%, #a80500 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ef0700), color-stop(100%,#a80500)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #ef0700 0%,#a80500 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #ef0700 0%,#a80500 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #ef0700 0%,#a80500 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #ef0700 0%,#a80500 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef0700', endColorstr='#a80500',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+color:#FFF;
+
+}
+#content table
+{
+	font-size: 20px;
+	margin: 0 10%;
+}
+#content table td
+{
+	padding: 10px 0 0 0;
+}
+#content table td input
+{
+	border:solid 0px #fff;
+	font-size: 16px;
+	color: #ef0700;
+}
+div.disclaimer
+{
+	margin: 1% 0% 0.5% 10%;
+	width: 100%;
+	font-size: 12px;
+}
+#submit{
+	float:right ;
+	margin-right:100px;
+	margin-bottom:10px;
+	margin-top: 20px;
+}
+input[type=text],input[type=password]
+{
+	padding-left: 5px;
+}
+input[type=submit]
+{
+	background: #f91b1b; /* Old browsers */
+	background: -moz-linear-gradient(top, #f91b1b 1%, #ff2b2b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#f91b1b), color-stop(100%,#ff2b2b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f91b1b 1%,#ff2b2b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f91b1b 1%,#ff2b2b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f91b1b 1%,#ff2b2b 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f91b1b 1%,#ff2b2b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f91b1b', endColorstr='#ff2b2b',GradientType=0 ); /* IE6-9 */
+	border: solid 0px #fff;
+	color: #fff;
+	cursor: pointer;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	font-size: 15px;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+.header
+{
+	font-size: 30px;
+	color: #fff;
+	padding:1% 0 0 10%; 
+}
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+*html .clearfix {
+	height: 1%;
+}
+#text{
+	margin-right:130px;
+	font-size:12px !important;
+}
+.reglog{
+	width:auto;
+	height:65px;
+	margin:0px auto !important;
+}
+.pre_num{
+	padding-left:33px !important;
+	background:url(../Capture.jpg);
+	width:174px;
+	}
